@@ -17,7 +17,6 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import {
     Sheet,
@@ -27,7 +26,6 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 interface MenuItem {
     title: string;
@@ -165,7 +163,7 @@ const renderMenuItem = (item: MenuItem) => {
     return (
         <NavigationMenuItem key={item.title}>
             <Link href={item.url as any} legacyBehavior passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-accent/50")}>
+                <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium hover:bg-accent/50 hover:text-accent-foreground focus:bg-accent/50 focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 outline-none transition-colors">
                     {item.title}
                 </NavigationMenuLink>
             </Link>
