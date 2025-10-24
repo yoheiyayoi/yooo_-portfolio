@@ -27,6 +27,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface MenuItem {
     title: string;
@@ -150,7 +151,7 @@ const renderMenuItem = (item: MenuItem) => {
         return (
             <NavigationMenuItem key={item.title}>
                 <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-popover text-popover-foreground">
+                <NavigationMenuContent>
                     {item.items.map((subItem) => (
                         <NavigationMenuLink asChild key={subItem.title} className="w-80">
                             <SubMenuLink item={subItem} />
@@ -164,7 +165,7 @@ const renderMenuItem = (item: MenuItem) => {
     return (
         <NavigationMenuItem key={item.title}>
             <Link href={item.url as any} legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-accent/50")}>
                     {item.title}
                 </NavigationMenuLink>
             </Link>
