@@ -17,6 +17,7 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
+    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import {
     Sheet,
@@ -162,11 +163,11 @@ const renderMenuItem = (item: MenuItem) => {
 
     return (
         <NavigationMenuItem key={item.title}>
-            <NavigationMenuLink asChild className="font-medium px-3">
-                <Link href={item.url as any}>
+            <Link href={item.url as any} legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     {item.title}
-                </Link>
-            </NavigationMenuLink>
+                </NavigationMenuLink>
+            </Link>
         </NavigationMenuItem>
     );
 };

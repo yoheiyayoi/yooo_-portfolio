@@ -2,7 +2,7 @@ import SkillBadge from '@/components/SkillBadge'
 import ColourfulText from '@/components/ui/colourful-text'
 import { Briefcase, Notebook, Sparkles } from 'lucide-react'
 
-import { TypeScript, JavaScript, Lua, Python, Kotlin, Nextjs, Bun, ReactDark, TailwindCSS, ShadcnUiDark, ShadcnUiLight, TanStack, PrismaLight, MySQL, Supabase, MongoDB, RobloxLight, GodotEngine, VisualStudioCode, ZedLight, RustLight, AstroLight, RobloxDark } from "@ridemountainpig/svgl-react";
+import { TypeScript, JavaScript, Lua, Python, Kotlin, Nextjs, Bun, ReactDark, TailwindCSS, ShadcnUiDark, ShadcnUiLight, TanStack, PrismaLight, MySQL, Supabase, MongoDB, RobloxLight, GodotEngine, VisualStudioCode, ZedLight, RustLight, AstroLight, RobloxDark, Tauri } from "@ridemountainpig/svgl-react";
 import Image from 'next/image';
 import Link from 'next/link';
 import Roblox from '@/components/ui/svgs/roblox';
@@ -42,6 +42,7 @@ export default function page() {
             { name: "Godot Engine", icon: <GodotEngine /> },
             { name: "Kotlin", icon: <Kotlin /> },
             { name: "Rust", icon: <RustLight /> },
+            { name: "Tauri v2", icon: <Tauri /> },
         ]
     }
 
