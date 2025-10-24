@@ -17,7 +17,7 @@ export const projects: Projects[] = [
         title: "yooo_ Portfolio",
         description: "Portfolio ส่วนตัวของผมเองครับ เว็บนี้นี่แหละ :)",
         image: "/projects/website/yooo_portfolio.png",
-        linkGithub: "https://github.com/Notties/blog-hono-api",
+        linkGithub: "https://github.com/yoheiyayoi/yooo_-portfolio",
         linkWebsite: "",
         stacks: ["Next.js", "TailwindCSS", "shadcn/ui"],
         category: "Website",
@@ -115,6 +115,17 @@ export const projects: Projects[] = [
     },
 
     // Scripts
+    {
+        title: "[Mount Enchantia] Bank System",
+        description: "System for mount enchantia's bank system (with gui)",
+        image: "/projects/script/mount_enchantia_bank.png",
+        linkGithub: "",
+        linkWebsite: "",
+        stacks: ["Roblox Luau", "Roblox GUI"],
+        category: "Script",
+        year: 2025,
+        type: "Customer Work",
+    },
     {
         title: "[Mount Enchantia] Inventory System",
         description: "System for mount enchantia's inventory system (with gui)",

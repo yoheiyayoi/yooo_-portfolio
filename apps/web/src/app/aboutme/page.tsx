@@ -52,15 +52,7 @@ export default function page() {
             title: "Developer at",
             place: "RottenDoge",
             link: "https://www.roblox.com/communities/34121244/RottenDoge#!/about",
-            date: "Since Oct 2024",
-            platform: "roblox"
-        },
-        {
-            image: "/experience/ghost.png",
-            title: "Developer at",
-            place: "Ghost Extermination Company",
-            link: "https://www.roblox.com/communities/14813831/Ghost-Extermination-Company#!/about",
-            date: "Since July 2024",
+            date: "Oct 2024 - Now",
             platform: "roblox"
         },
         {
@@ -68,7 +60,15 @@ export default function page() {
             title: "Developer at",
             place: "Zeal Studios",
             link: "https://zealstudios.vercel.app/",
-            date: "Since July 2023",
+            date: "July 2023 - Now",
+            platform: "roblox"
+        },
+        {
+            image: "/experience/ghost.png",
+            title: "Developer at",
+            place: "Ghost Extermination Company",
+            link: "https://www.roblox.com/communities/14813831/Ghost-Extermination-Company#!/about",
+            date: "Sept 2023 - July 2024",
             platform: "roblox"
         },
         {
@@ -76,7 +76,7 @@ export default function page() {
             title: "Student at",
             place: "NTUN",
             link: "http://ntun.ac.th/",
-            date: "Since 2021",
+            date: "2021 - Now",
             platform: "school"
         },
     ]
@@ -125,7 +125,7 @@ export default function page() {
                                                     <Roblox />
                                                 </div>
                                             )}
-                                            
+
                                             <div className="shrink-0 mt-0.5">
                                                 <Image
                                                     className="rounded-md shadow-sm ring-1 ring-slate-200"
